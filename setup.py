@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="PyDoge",
-    version="0.0.1",
+    version="0.1.0",
     author="Ezequiel Portela",
     author_email="eportelab@gmail.com",
     description="A common functions and helpers library",
@@ -17,6 +17,12 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+    ],
+    install_requires=[
+        'pyyaml',
+        'requests',
+        'YURL',
+        'pyjwt',
     ],
     python_requires='>=3.6'
 )
