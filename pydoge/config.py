@@ -1,5 +1,5 @@
 from os import environ
-from PyDoge.utils import get_yaml_file, group_dict_keys
+from pydoge.utils import get_yaml_file, group_dict_keys
 
 
 class Config:

@@ -3,7 +3,7 @@ import requests
 import jwt
 import json
 from copy import copy
-from PyDoge.utils import get_time_now, Map
+from pydoge.utils import get_time_now, Map
 
 
 class HttpService:
