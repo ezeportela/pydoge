@@ -1,5 +1,6 @@
 import logging
-from PyDoge.utils import concat
+import json
+from pydoge.utils import concat
 
 
 class Logger:
@@ -15,3 +16,9 @@ class Logger:
             print(msg)
         else:
             self.logger.info(msg)
+
+    def dir(self, message, object, sort_keys=True, indent=2):
+        self.info(
+            message,
+            json.dumps(object, sort_keys=sort_keys, indent=indent)
+        )

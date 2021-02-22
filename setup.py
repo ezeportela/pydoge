@@ -1,5 +1,7 @@
 import setuptools
 
+__version__ = '0.1.2'
+
 with open('README.md', 'r') as fh:
     long_description = fh.read()
 
@@ -8,7 +10,7 @@ with open('requirements.txt', 'r') as f:
 
 setuptools.setup(
     name='PyDoge',
-    version='0.1.1',
+    version=__version__,
     author='Ezequiel Portela',
     author_email='eportelab@gmail.com',
     description='A common functions and helpers library',
