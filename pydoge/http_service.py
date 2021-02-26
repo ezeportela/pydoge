@@ -48,7 +48,7 @@ class HttpService:
                 access_token = Map(self.token_service()).access_token
                 decoded = Map(jwt.decode(access_token, options={"verify_signature": False}))
                 token = {'value': access_token, 'exp': decoded.exp}
-                json_string = json.dumps(token)
+                json_string = json.dumps(token, default=str)
                 self.cache.set(self.token_key, json_string)
                 token = Map(token)
 
