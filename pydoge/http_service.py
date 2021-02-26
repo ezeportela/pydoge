@@ -46,7 +46,7 @@ class HttpService:
 
             if token is None or not valid:
                 access_token = Map(self.token_service()).access_token
-                decoded = Map(jwt.decode(access_token, verify=False))
+                decoded = Map(jwt.decode(access_token, options={"verify_signature": False}))
                 token = {'value': access_token, 'exp': decoded.exp}
                 json_string = json.dumps(token)
                 self.cache.set(self.token_key, json_string)
