@@ -1,5 +1,5 @@
 pyyaml
 requests
 YURL
-pyjwt
+pyjwt===2.0.0
 pydash
